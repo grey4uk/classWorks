@@ -1,0 +1,18 @@
+.ListContainerSmall{
+    width: 600px;
+    border: 2px solid #ffff00;
+    padding: 2px;
+}
+
+.ListContainerBig{
+    composes: ListContainerSmall;
+    width: 980px;
+    background-color:  #0fe7b8;
+}
+
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
