@@ -14,13 +14,16 @@ class App extends Component {
       "https://grey4ukapp.firebaseio.com/wishes.json"
     );
     let transform;
-    if(data.data){
-    transform = Object.keys(data.data).map(key => {
-      return {
-        ...data.data[key],
-        id: key
-      };
-    });}else{transform=[]}
+    if (data.data) {
+      transform = Object.keys(data.data).map(key => {
+        return {
+          ...data.data[key],
+          id: key
+        };
+      });
+    } else {
+      transform = [];
+    }
     this.setState({
       wishes: transform
     });
